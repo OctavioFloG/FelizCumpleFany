@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>¡Feliz Cumpleaños!</h1>
+        <p>Hoy es un día muy especial porque es tu cumpleaños. Quiero que sepas lo mucho que te quiero y lo importante
+            que eres para mí.</p>
+
+        <!-- Corazón hecho con CSS -->
+        <div class="heart"></div>
+
+        <!-- Mensajes especiales -->
+        <div class="mensajes">
+            <div class="mensaje-bloque">
+                <p>Leerte y poder escucharte, a pesar de la distancia, me pone muy feliz, quiero que lo sepas.</p>
+            </div>
+            <hr class="divisor">
+            <p>Me alegra que hayas llegado a mi vida.</p>
+            <hr class="divisor">
+            <p>Me alegra saber que tengo a una persona tan linda como tú.</p>
+            <hr class="divisor">
+            <p>Me alegra que seas tú el motivo de mis alegrías.</p>
+            <hr class="divisor">
+            <p>Me alegra que seas el único mensaje que espero con ansias</p>
+            <hr class="divisor">
+            <p>Muchas cosas más, no soy tan expresivo perdón 🥺</p>
+
+        </div>
+
+        <!-- Mensaje especial -->
+        <div class="mensaje-especial">
+            <p>Espero que disfrutes tu día, pásatela muy bien. ¡Te mereces lo mejor!</p>
+            <p>Por cierto aqui tienes una sorpresa...</p>
+        </div>
+
+        <!-- Botón interactivo -->
+        <a href="#" class="button" onclick="mostrarPopup()">¡Haz clic para tu sorpresa!</a>
+    </div>
+
+    <!-- Pop-up de la sorpresa -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="cerrarPopup()">&times;</span>
+            <img src="cat_n_flower.jpg" alt="Sorpresa" onclick="mostrarMensajeFinal()">
+            <p>Me encantas ♥️</p>
+        </div>
+    </div>
+
+    <!-- Pop-up final -->
+    <div class="popup" id="popup-final">
+        <div class="popup-content">
+            <span class="close-btn" onclick="cerrarPopupFinal()">&times;</span>
+            <p>Lo siento, ya es todo. 🥔</p>
+            <p>Pd: No le enseñes a todo el mundo, soy emo y asi</p>
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
